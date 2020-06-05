@@ -26,6 +26,5 @@ def triangle?
   end
 
  class TriangleError < StandardError
-  
   end
 end
