@@ -10,7 +10,7 @@ class Triangle
 def :equilateral(triangle)
   if @s1 == @s2 && @s2 == @s3
   :equilateral
-else 
+elsif 
 
 def triangle?
   tri = [(a + b > c), (a + c > b), (b + c > a)]
