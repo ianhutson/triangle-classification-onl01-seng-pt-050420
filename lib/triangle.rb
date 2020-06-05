@@ -7,7 +7,8 @@ class Triangle
     @s3 = s3
   end
 
-def 
+def type
+  triangle?
   if @s1 == @s2 && @s2 == @s3
   :equilateral
 elsif @s1 == @s2 || @s1 == @s2 || @s2 == @s3
