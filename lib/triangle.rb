@@ -21,6 +21,7 @@ def :equilateral(triangle)
 end
 
 def triangle?
+  tri = [(a + b > c), (a + c > b), (b + c > a)]
 end
  class TriangleError < StandardError
    def message
