@@ -7,7 +7,7 @@ class Triangle
     @s3 = s3
   end
 
-def :equilateral
+def :equilateral(triangle)
   @s1 == @s2 && @s2 == @s3
   if triangle.class != Person
       begin
