@@ -1,8 +1,10 @@
 class Triangle
   attr_accessor :partner, :name
 
-  def initialize(name)
-    @name = name
+  def initialize(s1, s2, s3)
+    @s1 = s1
+    @s2 = s2
+    @s3 = s3
   end
 
 def get_married(person)
