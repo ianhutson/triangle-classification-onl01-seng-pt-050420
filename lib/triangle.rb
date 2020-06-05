@@ -16,7 +16,7 @@ def :equilateral(triangle)
           puts error.message
       end
     else
-      person.partner = self
+      triangle.partner = self
     end
 end
  class TriangleError < StandardError
