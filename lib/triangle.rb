@@ -11,6 +11,7 @@ def :equilateral(triangle)
   if @s1 == @s2 && @s2 == @s3
   :equilateral
 elsif @s1 == @s2 || @s1 == @s2 || @s2 == @s3
+:isosceles
 else
 
 def triangle?
