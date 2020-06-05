@@ -21,7 +21,7 @@ end
 def triangle
   tri = [(a + b > c), (a + c > b), (b + c > a)]
   [a, b, c].each do |side|
-      real_triangle << false if side <= 0 
+      tri << false if side <= 0 
     raise TriangleError if tri.include?(false)
     end
   end
