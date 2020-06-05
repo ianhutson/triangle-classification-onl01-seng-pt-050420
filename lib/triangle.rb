@@ -13,6 +13,9 @@ def :equilateral(triangle)
 elsif @s1 == @s2 || @s1 == @s2 || @s2 == @s3
 :isosceles
 else 
+  :scalene
+end
+end
 
 def triangle?
   tri = [(a + b > c), (a + c > b), (b + c > a)]
