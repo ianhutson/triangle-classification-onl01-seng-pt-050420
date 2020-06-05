@@ -22,7 +22,12 @@ end
 
 def triangle?
   tri = [(a + b > c), (a + c > b), (b + c > a)]
-end
+  [a, b, c].each do |side|
+      real_triangle << false if side <= 0 
+    raise TriangleError if real_triangle.include?(false)
+    end
+  end
+
  class TriangleError < StandardError
    def message
     "you must give the get_married method an argument of an instance of the person class!"
