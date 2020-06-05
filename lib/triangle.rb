@@ -8,7 +8,7 @@ class Triangle
   end
 
 def type
-  triangle?
+  triangle
   if @s1 == @s2 && @s2 == @s3
   :equilateral
 elsif @s1 == @s2 || @s1 == @s2 || @s2 == @s3
@@ -18,7 +18,7 @@ else
 end
 end
 
-def triangle?
+def triangle
   tri = [(a + b > c), (a + c > b), (b + c > a)]
   [a, b, c].each do |side|
       real_triangle << false if side <= 0 
