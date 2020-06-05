@@ -7,17 +7,8 @@ class Triangle
     @s3 = s3
   end
 
-def get_married(person)
-    self.partner = person
-    if person.class != Person
-      begin
-        raise PartnerError
-      rescue PartnerError => error
-          puts error.message
-      end
-    else
-      person.partner = self
-    end
+def :equilateral
+  @s1 == @s2 && @s2 == @s3
 end
  class TriangleError < StandardError
    def message
