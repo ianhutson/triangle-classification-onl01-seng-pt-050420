@@ -20,7 +20,7 @@ end
 
 def triangle
   tri = [(a + b > c), (a + c > b), (b + c > a)]
-  [a, b, c].each do |side|
+  [s1, s2, s3].each do |side|
       tri << false if side <= 0 
     raise TriangleError if tri.include?(false)
     end
