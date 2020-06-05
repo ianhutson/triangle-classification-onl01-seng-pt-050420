@@ -11,8 +11,8 @@ def :equilateral(triangle)
   @s1 == @s2 && @s2 == @s3
   if triangle.class != Person
       begin
-        raise PartnerError
-      rescue PartnerError => error
+        raise TriangleError
+      rescue TriangleError => error
           puts error.message
       end
     else
