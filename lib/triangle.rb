@@ -19,6 +19,9 @@ def :equilateral(triangle)
       triangle.partner = self
     end
 end
+
+def triangle?
+end
  class TriangleError < StandardError
    def message
     "you must give the get_married method an argument of an instance of the person class!"
