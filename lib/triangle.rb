@@ -9,7 +9,7 @@ class Triangle
 
 def :equilateral
   @s1 == @s2 && @s2 == @s3
-  if person.class != Person
+  if triangle.class != Person
       begin
         raise PartnerError
       rescue PartnerError => error
