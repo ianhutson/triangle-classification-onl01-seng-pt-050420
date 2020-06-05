@@ -8,17 +8,8 @@ class Triangle
   end
 
 def :equilateral(triangle)
-  @s1 == @s2 && @s2 == @s3
-  if triangle.class != Person
-      begin
-        raise TriangleError
-      rescue TriangleError => error
-          puts error.message
-      end
-    else
-      triangle.partner = self
-    end
-end
+  if @s1 == @s2 && @s2 == @s3
+  
 
 def triangle?
   tri = [(a + b > c), (a + c > b), (b + c > a)]
